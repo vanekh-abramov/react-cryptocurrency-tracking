@@ -1,4 +1,14 @@
 .default_button {
-  padding: 1rem;
-  width: 5rem;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: all .3s linear;
+  &:hover {
+    background: linear-gradient(90deg, hsla(217, 100%, 60%, 1) 0%, hsla(186, 100%, 80%, 1) 100%);
+    transform: scale(1.1);
+    box-shadow: 8px 3px 3px rgb(104, 91, 91);
+  }
 }
