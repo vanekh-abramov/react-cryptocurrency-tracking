@@ -1,8 +1,3 @@
-export interface ICoin {
-  data: Data;
-  timestamp: number;
-}
-
 export interface Data {
   id: string;
   rank: string;
@@ -17,4 +12,7 @@ export interface Data {
   vwap24Hr: string;
   explorer: string;
 }
-
+export interface ICoin {    
+  data: Data[];
+  timestamp: number;
+}

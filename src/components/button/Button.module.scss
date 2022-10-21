@@ -1,3 +1,12 @@
+
+.nav_link {
+  &:hover {
+    background: linear-gradient(90deg, hsla(217, 100%, 60%, 1) 0%, hsla(186, 100%, 80%, 1) 100%);
+    transform: scale(1.1);
+    box-shadow: 8px 3px 3px rgb(104, 91, 91);
+  }
+}
+
 .default_button {
   padding: 0.5rem;
   font-size: 1.1rem;

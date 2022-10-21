@@ -1,11 +1,11 @@
 import { fetchCoins } from "./../../store/coinCap/coincap.api";
 import { useAppDispatch, useAppSelector } from "./../../hooks/redux";
 import { useEffect } from "react";
-import { Data, ICoin } from "./../../models/models";
+import { Data } from "./../../models/models";
 
 const HomePage = () => {
   const dispatch = useAppDispatch();
-  const { coins, error, status } = useAppSelector((state) => state.coins);
+  const { coins } = useAppSelector((state) => state.coins);
 
   useEffect(() => {
     dispatch(fetchCoins());
@@ -15,11 +15,8 @@ const HomePage = () => {
 
   return (
     <div>
-      {/* {coins.data?.map(({id}: Data) => (
+      {coins.data?.map(({ id }: Data) => (
         <div>{id}</div>
-      ))} */}
-      {coins?.map((coins) => (
-        <div>{coins.data.id}</div>
       ))}
     </div>
   );
