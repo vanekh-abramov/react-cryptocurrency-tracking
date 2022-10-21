@@ -1,16 +1,24 @@
-import AppRouter from "./helpers/router/AppRouter";
-import { HOME_ROUTE } from "./constants/routerLinks";
+// import AppRouter from "./helpers/router/AppRouter";
+// import { HOME_ROUTE } from "./constants/routerLinks";
+import Head from "./pages/head/Head";
+// import Button from "./components/button/Button";
+import HomePage from "./pages/home/HomePage";
+import classes from "./App.module.scss";
 import Header from "./components/header/Header";
-import Button from "./components/button/Button";
 
 const App = () => {
   return (
-    <div>
-      <Header>
-        <Button button_text="Home" button_route={HOME_ROUTE} />
-      </Header>
-      <AppRouter />
-    </div>
+    <>
+      {/* <AppRouter /> Show route result */}
+      {/* <Button button_text="Home" button_route={HOME_ROUTE} /> Example route button */}
+      <div className={classes.container}>
+        <Header />
+        <Head>
+          <h1>Head</h1>
+        </Head>
+        <HomePage />
+      </div>
+    </>
   );
 };
 

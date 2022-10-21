@@ -1,6 +1,8 @@
 .header {
-  padding: 1rem;
-  width: 100%;
-  height: 100px;
-  background-color: rgb(216, 166, 166);
+  height: 5rem;
+  background-color: blue;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  scroll-snap-align: none;
 }

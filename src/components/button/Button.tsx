@@ -8,7 +8,7 @@ type Props = {
 
 const Button = ({ button_text, button_route }: Props) => {
   return (
-    <NavLink to={button_route}>
+    <NavLink to={button_route} className={classes.nav_link}>
       <button className={classes.default_button}>{button_text}</button>
     </NavLink>
   );

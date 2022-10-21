@@ -1,15 +1,8 @@
 import classes from './Header.module.scss'
-import { ReactNode } from 'react';
 
-type Props = {
-  children: ReactNode;
-}
-
-const Header = ({children}: Props) => {
+const Header = () => {
   return (
-    <header className={classes.header}>
-      {children}
-    </header>
+    <header className={classes.header}></header>
   )
 }
 

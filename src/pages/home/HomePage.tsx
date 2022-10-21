@@ -1,7 +1,8 @@
 import { fetchCoins } from "./../../store/coinCap/coincap.api";
 import { useAppDispatch, useAppSelector } from "./../../hooks/redux";
 import { useEffect } from "react";
-import { Data } from "./../../models/models";
+// import { Data } from "./../../models/models";
+import classes from './Home.module.scss'
 
 const HomePage = () => {
   const dispatch = useAppDispatch();
@@ -14,11 +15,12 @@ const HomePage = () => {
   console.log(coins);
 
   return (
-    <div>
-      {coins.data?.map(({ id }: Data) => (
+    <section className={classes.section}>
+      <h1>Main</h1>
+      {/* {coins.data?.map(({ id }: Data) => (
         <div>{id}</div>
-      ))}
-    </div>
+      ))} */}
+    </section>
   );
 };
 
