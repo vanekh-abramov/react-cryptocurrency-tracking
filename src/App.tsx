@@ -13,9 +13,7 @@ const App = () => {
       {/* <Button button_text="Home" button_route={HOME_ROUTE} /> Example route button */}
       <div className={classes.container}>
         <Header />
-        <Head>
-          <h1>Head</h1>
-        </Head>
+        <Head />
         <HomePage />
       </div>
     </>

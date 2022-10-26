@@ -1,16 +1,13 @@
-import classes from './Head.module.scss'
-import { ReactNode } from 'react';
+import classes from "./Head.module.scss";
 
-type Props = {
-  children: ReactNode;
-}
-
-const Head = ({children}: Props) => {
+const Head = () => {
   return (
     <section className={classes.head}>
-      {children}
+      <div className={classes.head_title}>
+        <h1 className={classes.head_title_text}>crypocurrency</h1>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Head
+export default Head;
